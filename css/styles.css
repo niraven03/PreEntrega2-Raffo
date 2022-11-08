@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+header {
+    background-color: rgb(55, 71, 79);
+    padding: 5px;
+    display: block;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+header nav{
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 247, 233);
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px auto;
+}
+.principal{
+    text-align: center;
+    background-image: url(../assets/images/Online.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+}
+.principal a {
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgb(255, 115, 29);
+    color: rgb(255, 247, 233);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-color: rgb(255, 247, 233);
+    padding: 20px 100px;
+    border: 0.5px solid white;
+}
+.principal__callToAction{
+    margin: 50px auto;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.parrafo{
+    font-family: 'Robot', sans-serif;
+    font-weight: 100;
+}
+.cardsBeneficios{
+    background-color: rgb(144, 164, 174);
+    padding: 20px 20px;
+    text-align: center;
+    height: 15%;
+}
+.cardsBeneficios div {
+    background-color: rgb(55, 71, 79);
+    border-radius: 10px;
+    color: rgb(255, 247, 233);
+    padding: 10px;
+    margin: 10px 50px;
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    display: inline-block;
+}
+.cardsBeneficios div img {
+    border-radius: 10px;
+    width: 180;
+    height: 120;
+    margin: 10px;
+    padding: 10px;
+}
+.cardsBeneficios div p {
+    margin: 10px;
+    padding: 10px;
+}
+.logosCias{
+    padding: 50px;
+    text-align: center;
+}
+.logosCias div {
+    background-color: rgb(144, 164, 174);
+    border-radius: 10px;
+    margin: 10px 50px;
+    text-align: center;
+    width: 200px;
+    height: 120px;
+    display: inline-block;
+}
+footer{
+    background-color: rgb(55, 71, 79);
+    padding: 10px;
+    color: rgb(255, 247, 233);
+    text-align: center;
+}
+footer p {
+    margin: 5px;
+}
+footer section a {
+    color: rgb(255, 247, 233);
+    margin: 10px;
+}
+
+.cardsSeguros {
+    background-color: rgb(144, 164, 174);
+    padding: 20px;
+    text-align: center;
+}
+.cardsSeguros div {
+    background-color: rgb(55, 71, 79);
+    border-radius: 10px;
+    color: rgb(255, 247, 233);
+    padding: 10x;
+    margin: 10px 50px;
+    text-align: center;
+    width: 250px;
+    height: 280px;
+    text-align: center;
+    display: inline-block;
+}
+.cardsSeguros div img {
+    border-radius: 10px;
+    margin: 10px;
+}
+.cardsSeguros p {
+    margin: 8px;
+}
+.botonCotizar{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(255, 115, 29);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.masInfo{
+    padding: 20px;
+    text-align: center;
+}
+.masInfo h3,p,button {
+    margin: 10px;
+}
+.botonInfo {
+    width: 25%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(144, 164, 174);
+    border: 0;
+    color: rgb(55, 71, 79);
+}
+
+.formularioSiniestros{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+.formularioSiniestros div {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+}
+.parrafosFormulario{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgb(144, 164, 174);
+    text-align: left;
+}
+.formularioSiniestros div select, option, input {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+.fechaHora input{
+    width: 49.7%;
+}
+.inputComentario{
+    height: 150px;
+}
+
+.nosotros {
+    text-align: center;
+    background-image: url(../assets/images/Oficina.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+    color: rgb(255, 247, 233);
+}
+.contenidoNosotros{
+    padding: 20px;
+}
+.contenidoNosotros section h3{
+    margin: 50px 10px;
+}
+.contenidoNosotros section h5, p{
+    margin: 10px;
+}
+.mapa{
+    background-color: rgb(144, 164, 174);
+    padding: 10px;
+    width: 100%;
+    height: 30%;
+}
+.mapa div {
+    height: 70%;
+    margin: 10px;
+    display: inline-block;
+}
+.mapa div iframe,h3,p {
+    padding: 10px;
+    margin: 5px;
+}
+.formularioContacto {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+.formularioContacto div {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+}
+.formularioContacto div select, option,input {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+.formularioContacto div div {
+    width: 30%;
+}
+.botonEnviar{
+    margin: 10px;
+    display: inline-block;
+}
