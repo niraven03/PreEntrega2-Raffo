@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,76 +12,133 @@
     <title>SegurosNet</title>
 </head>
 <header>
-   <nav>
-       <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/seguros.html">Seguros</a></li>
-            <li><a href="./pages/siniestros.html">Siniestros</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-       </ul>
+    <nav class="navbar navbar-expand-lg navbar-light color-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/Logo.png" alt="" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./pages/seguros.html">Seguros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./pages/siniestros.html">Siniestros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>   
 <body>
     <main>
-        <section class="principal">         
-            <h1 class="principal__titulo">CONTRATA LAS MEJORES COBERTURAS DE SEGUROS</h1>
-            <div class="principal__callToAction">
-                <a href="./pages/seguros.html">COTIZA AHORA</a>
-            </div>
+        <section class="principal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="principal__titulo">CONTRATA LAS MEJORES COBERTURAS DE SEGUROS</h1>
+                    </div>
+                    <div class="col-12 principal__callToAction .">
+                        <a href="./pages/seguros.html">COTIZA AHORA</a>
+                    </div>
+                </div>
+             </div>
         </section>
     </main>
-    <section class="cardsBeneficios">
-        <div>
-            <img src="./assets/images/time.jpg" alt="Rapido" width="180" height="120">
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
-        <div>
-            <img src="./assets/images/desdeCasa.jpg" alt="desdeCasa" width="180" height="120">
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
-        <div>
-            <img src="./assets/images/Agil.jpg" alt="Agil" width="180" height="120">
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
+    <section class="container-fluid sectionCard">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/time.jpg" class="card-img-top" alt="Rapido">
+                        <div class="card-body">
+                            <p class="card-text">Podes conparar y contratar tu seguro de forma rapida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/desdeCasa.jpg" class="card-img-top" alt="desdeCasa">
+                        <div class="card-body">
+                            <p class="card-text">Con la facilidad de hacerlo desde cualquier lado donde estes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/Agil.jpg" class="card-img-top" alt="Agil">
+                        <div class="card-body">
+                            <p class="card-text">Totalmente agil y de facil acceso para todas las personas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <section class="logosCias">
-        <div>
-            <img src="./assets/images/Logos/fedpat.png" alt="Fedpat" width="200" height="120">
-        </div>
-        <div>
-            <img src="./assets/images/Logos/sancor.png" alt="Sancor" width="200" height="120">
-        </div>
-        <div>
-            <img src="./assets/images/Logos/La Cja.png" alt="La Caja" width="200" height="120">
-        </div>
-        <div>
-            <img src="./assets/images/Logos/Triunfo Seguros.png" alt="" width="200" height="120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div>
+                        <img src="./assets/images/Logos/fedpat.png" class="card-img-top" alt="Rapido">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div>
+                        <img src="./assets/images/Logos/La Cja.png" class="card-img-top" alt="Rapido">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div>
+                        <img src="./assets/images/Logos/Triunfo Seguros.png" class="card-img-top" alt="Rapido">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div>
+                        <img src="./assets/images/Logos/san cristobal.jpg" class="card-img-top" alt="Rapido">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-</body>
-<footer>
-    <section class="legalesSsn">
-        <div>
-            <img src="./assets/images/Logos/snn.png" alt="LogoSSN.png">
-        </div>
-        <div>
-            <p class="parrafo">Superintendencia de Seguros de la Nación – Organo de Control de la Actividad Aseguradora y Reaseguradora.</p>
-            <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
-            <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
-            <p class="parrafo">ORG. NELDO RAFFO S.A.</p>
-            <p class="parrafo">MP SSN Nº 866</p>
-        </div>
-    </section>
-    <section>
-        <img src="./assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
-    </section>
-    <section class="redesSociales">
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Linkenid</a>
-        <a href="">Youtube</a>
+    <footer class="container-fluid">
+        <section class="legalesSsn">
+            <div>
+                <img src="./assets/images/Logos/snn.png" alt="LogoSSN.png">
+            </div>
+            <div>
+                <p class="parrafo">Superintendencia de Seguros de la Nación – Organo de Control de la Actividad Aseguradora y Reaseguradora.</p>
+                <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
+                <p class="parrafo">ORG. NELDO RAFFO S.A.</p>
+                <p class="parrafo">MP SSN Nº 866</p>
+            </div>
         </section>
-        <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
-</footer>
+        <section>
+            <img src="./assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
+        </section>
+        <section class="redesSociales">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Linkenid</a>
+            <a href="">Youtube</a>
+            </section>
+            <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
 </html>

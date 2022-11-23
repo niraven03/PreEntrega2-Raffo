@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,70 +12,94 @@
     <title>SegurosNet</title>
 </head>
 <header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Seguros</a></li>
-            <li><a href="./siniestros.html">Siniestros</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light color-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/Logo.png" alt="" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="#">Seguros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./siniestros.html">Siniestros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <body>
     <section class="principal">
-        <h1>Cotiza ahora con los mejores descuentos</h2>
+        <h1>Cotiza ahora con los mejores descuentos</h1>
     </section>
     <section class="cardsSeguros">
         <h3>Encotra el mejor seguro para vos</h3>
         <div>
             <img src="../assets/images/auto.jpg" alt="Auto" width="180" height="120">
             <h2>AUTO</h2>
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="parrafo">Cotiza diferentes coberturas para tu vehiculo</p>
             <button class="botonCotizar">Cotizar</button>
         </div>
         <div>
             <img src="../assets/images/moto1.jpg" alt="Moto" width="180" height="120">
             <h2>MOTO</h2>
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="parrafo">Cotiza ahora el seguro para tu motovehiculo</p>
             <button class="botonCotizar">Cotizar</button>
         </div>
         <div>
             <img src="../assets/images/casa1.jpg" alt="Hogar" width="180" height="120">
             <h2>HOGAR</h2>
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="parrafo">Compara diferentes opciones para asegurar tu hogar</p>
             <button class="botonCotizar">Cotizar</button>
         </div>
     </section>
     <section class="masInfo">
         <h3>¿Buscas mas informacion?</h3>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p class="parrafo">Encontra preguntas frecuentes o envianos un mensaje para evacuar tus dudas.</p>
         <button class="botonInfo">Ver mas</button>
     </section>
+    <footer class="container-fluid">
+        <section class="legalesSsn">
+            <div>
+                <img src="../assets/images/Logos/snn.png" alt="LogoSSN.png">
+            </div>
+            <div>
+                <p class="parrafo">Superintendencia de Seguros de la Nación – Organo de Control de la Actividad Aseguradora
+                    y Reaseguradora.</p>
+                <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
+                <p class="parrafo">ORG. NELDO RAFFO S.A.</p>
+                <p class="parrafo">MP SSN Nº 866</p>
+            </div>
+        </section>
+        <section>
+            <img src="../assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
+        </section>
+        <section class="redesSociales">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Linkenid</a>
+            <a href="">Youtube</a>
+        </section>
+        <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js">
+
+    </script>
 </body>
-<footer>
-    <section class="legalesSsn">
-        <div>
-            <img src="../assets/images/Logos/snn.png" alt="LogoSSN.png">
-        </div>
-        <div>
-            <p class="parrafo">Superintendencia de Seguros de la Nación – Organo de Control de la Actividad Aseguradora
-                y Reaseguradora.</p>
-            <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
-            <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
-            <p class="parrafo">ORG. NELDO RAFFO S.A.</p>
-            <p class="parrafo">MP SSN Nº 866</p>
-        </div>
-    </section>
-    <section>
-        <img src="../assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
-    </section>
-    <section class="redesSociales">
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Linkenid</a>
-        <a href="">Youtube</a>
-    </section>
-    <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
-</footer>
 </html>

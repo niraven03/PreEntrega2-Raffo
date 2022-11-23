@@ -17,6 +17,10 @@ header {
     top: 0px;
     z-index: 10;
 }
+.color-navbar{
+    background-color: rgb(55, 71, 79);
+    color: rgb(255, 247, 233);
+}
 header nav{
     text-align: center;
 }
@@ -41,7 +45,7 @@ h1 {
 .principal{
     text-align: center;
     background-image: url(../assets/images/Online.jpg);
-    height: 500px;
+    height: 30%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,9 +58,13 @@ h1 {
     color: rgb(255, 247, 233);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 2rem;
     border-color: rgb(255, 247, 233);
-    padding: 20px 100px;
+    padding: 1rem 8rem;
     border: 0.5px solid white;
+}
+.principal a:hover{
+    color: #0a58ca;
 }
 .principal__callToAction{
     margin: 50px auto;
@@ -80,46 +88,40 @@ h5 {
     font-family: 'Robot', sans-serif;
     font-weight: 100;
 }
-.cardsBeneficios{
+.card{
     background-color: rgb(144, 164, 174);
-    padding: 20px 20px;
-    text-align: center;
-    height: 15%;
-}
-.cardsBeneficios div {
-    background-color: rgb(55, 71, 79);
-    border-radius: 10px;
     color: rgb(255, 247, 233);
-    padding: 10px;
-    margin: 10px 50px;
-    width: 20%;
-    height: 80%;
-    text-align: center;
-    display: inline-block;
-}
-.cardsBeneficios div img {
     border-radius: 10px;
     width: 180;
     height: 120;
     margin: 10px;
     padding: 10px;
 }
-.cardsBeneficios div p {
+.cardsSeguros{
+    background-color: rgb(144, 164, 174);
+    text-align: center;
+}
+.sectionCard {
+    background-color: rgb(55, 71, 79);
+    padding: 10px;
+}
+.card img{
+    border-radius: 10px;
+}
+.card div p {
     margin: 10px;
     padding: 10px;
 }
 .logosCias{
-    padding: 50px;
+    width: 100%;
+    padding: 10px;
     text-align: center;
-}
-.logosCias div {
-    background-color: rgb(144, 164, 174);
-    border-radius: 10px;
-    margin: 10px 50px;
-    text-align: center;
-    width: 200px;
-    height: 120px;
     display: inline-block;
+}
+.logosCiasDiv {
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 footer{
     background-color: rgb(55, 71, 79);
@@ -177,11 +179,12 @@ footer section a {
 }
 .botonInfo {
     width: 25%;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 2px;
     border-radius: 10px;
     background-color: rgb(144, 164, 174);
     border: 0;
-    color: rgb(55, 71, 79);
+    color: rgb(255, 255, 255);
 }
 
 .formularioSiniestros{
@@ -193,7 +196,7 @@ footer section a {
 .formularioSiniestros div {
     padding: 10px;
     margin: 10px;
-    width: 50%;
+    width: 100%;
     height: 50px;
     display: inline-block;
 }
@@ -238,10 +241,14 @@ footer section a {
     background-color: rgb(144, 164, 174);
     padding: 10px;
     width: 100%;
-    height: 30%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mapa div {
-    height: 70%;
+    height: 80%;
+    width: 40%;
     margin: 10px;
     display: inline-block;
 }
@@ -271,4 +278,43 @@ footer section a {
 .botonEnviar{
     margin: 10px;
     display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 2rem;
+    }
+    .principal a {
+        font-weight: 500;
+        padding: 1rem 4rem;
+        font-size: 1.5rem;
+    }
+    .principal {
+        min-height: 100vh;
+        padding: 25vh 0;
+    }
+    .botonInfo {
+        width: 50%;
+        padding: 0.50px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fechaHora input{
+        width: 45%;
+    }
+}
+@media (max-width: 576px) {
+    .fechaHora input {
+        margin: 10px;
+        width: 100%;
+    }
+    .botonInfo {
+        width: 50%;
+        font-size: 0.8rem;
+        padding: 0.20px;
+        border-radius: 10px;
+    }
 }

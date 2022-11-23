@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,44 +12,69 @@
     <title>SegurosNet</title>
 </head>
 <header>
-    <nav>
-       <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./seguros.html">Seguros</a></li>
-            <li><a href="./siniestros.html">Siniestros</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light color-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/Logo.png" alt="" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./seguros.html">Seguros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./siniestros.html">Siniestros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navbar active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <body>
     <section class="nosotros">
-        <h1>La empresa</h2>
+        <h1>La empresa</h1>
     </section>
     <div class="contenidoNosotros">
     <section>
-        <h3>¿Quienes somos?</h3>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.</p>
+        <h2>¿Quienes somos?</h2>
+        <p class="parrafo">SegurosNet es una empresa integral de seguros y asesoramiento que opera en el mercado representando a
+        las aseguradoras más prestigiosas y sólidas de la Argentina. La actividad de nuestra firma, que fue creciendo y
+        consolidándose con los años, comenzó en 1963, desde una modesta oficina en la ciudad de Río Tercero, Córdoba, hasta
+        llegar a ser hoy una de las compañías más importantes del interior provincial. NELDO RAFFO Nuestro personal está
+        capacitándose permanentemente para adecuarse a las exigencias de los tiempos actuales.</p>
     </section>
     <section>
         <h3>Nuestro aporte al mundo</h3>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.</p> 
-            <h5>Aptitud 1</h5>
-            <h5>Aptitud 2</h5>
-            <h5>Aptitud 3</h5>
-            <h5>Aptitud 4</h5>
-            <h5>Aptitud 5</h5>
-            <h5>Aptitud 6</h5>
+        <p class="parrafo">SegurosNet no solamente es una empresa dedicada al asesoramiento en seguros y en brindar las mejores
+        coberturas. Es, en realidad, un ícono de la ciudad cuando se habla de este mercado. Desde su moderno edificio, ubicado
+        en la céntrica calle Velez Sarsfield, proponemos un servicio integral basado en la confianza, en la actitud comprometida
+        de nuestro personal y en las innovaciones permanentes. Nuestro servicio, trasciende la provisión de un seguro: estamos
+        dispuestos a asesorarlo no solamente cuando sufre un siniestro, sino también estamos para cuando usted sufre otras
+        emergencias o tiene dudas. Por eso, desarrollamos una amplia gama de servicios, que usted puede conocer en este, nuestro
+        web site. Lo invitamos a recorrerlo.</p> 
+            <h5>Mas de 60 años de experiencia</h5>
+            <h5>Personal altamente capacitado</h5>
+            <h5>La mas alta calidad</h5>
+            <h5>Gran valor humano</h5>
+            <h5>Asistencia 24/7</h5>
+            <h5>Rapidez</h5>
         </section>      
         </div>
-    </body>
-    <footer>
+    <footer class="container-fluid">
         <section class="legalesSsn">
             <div>
                 <img src="../assets/images/Logos/snn.png" alt="LogoSSN.png">
@@ -56,21 +82,24 @@
             <div>
                 <p class="parrafo">Superintendencia de Seguros de la Nación – Organo de Control de la Actividad Aseguradora
                     y Reaseguradora.</p>
-            <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
-            <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
-            <p class="parrafo">ORG. NELDO RAFFO S.A.</p>
-            <p class="parrafo">MP SSN Nº 866</p>
-        </div>
-    </section>
-    <section>
-        <img src="../assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
-    </section>
-    <section class="redesSociales">
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Linkenid</a>
-        <a href="">Youtube</a>
-    </section>
-    <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
-</footer>
+                <p class="parrafo">0800-666-8400 – www.ssn.gob.ar</p>
+                <p class="parrafo">ORG. NELDO RAFFO S.A.</p>
+                <p class="parrafo">MP SSN Nº 866</p>
+            </div>
+        </section>
+        <section>
+            <img src="../assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
+        </section>
+        <section class="redesSociales">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Linkenid</a>
+            <a href="">Youtube</a>
+        </section>
+        <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js">
+
+    </script>
+    </body>
 </html>
