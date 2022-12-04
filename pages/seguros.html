@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
     <title>SegurosNet</title>
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light color-navbar">
+<header class="shadow-lg">
+    <nav class="navbar navbar-expand-lg color-navbar text-white navbar-light-hover-colo">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="../assets/images/Logo.png" alt="" width="30" height="24">
+                <img src="../assets/images/Logo.png" alt="Logo" width="50" height="44">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,7 +31,8 @@
                         <a class="nav-link color-navbar active" aria-current="page" href="#">Seguros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-navbar active" aria-current="page" href="./siniestros.html">Siniestros</a>
+                        <a class="nav-link color-navbar active" aria-current="page"
+                            href="./siniestros.html">Siniestros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link color-navbar active" aria-current="page" href="./nosotros.html">Nosotros</a>
@@ -48,26 +49,40 @@
     <section class="principal">
         <h1>Cotiza ahora con los mejores descuentos</h1>
     </section>
-    <section class="cardsSeguros">
-        <h3>Encotra el mejor seguro para vos</h3>
-        <div>
-            <img src="../assets/images/auto.jpg" alt="Auto" width="180" height="120">
-            <h2>AUTO</h2>
-            <p class="parrafo">Cotiza diferentes coberturas para tu vehiculo</p>
-            <button class="botonCotizar">Cotizar</button>
-        </div>
-        <div>
-            <img src="../assets/images/moto1.jpg" alt="Moto" width="180" height="120">
-            <h2>MOTO</h2>
-            <p class="parrafo">Cotiza ahora el seguro para tu motovehiculo</p>
-            <button class="botonCotizar">Cotizar</button>
-        </div>
-        <div>
-            <img src="../assets/images/casa1.jpg" alt="Hogar" width="180" height="120">
-            <h2>HOGAR</h2>
-            <p class="parrafo">Compara diferentes opciones para asegurar tu hogar</p>
-            <button class="botonCotizar">Cotizar</button>
-        </div>
+    <section class="container-fluid sectionCard">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="../assets/images/auto.jpg" class="card-img-top" alt="Rapido">
+                        <div class="card-body">
+                            <h2>AUTO</h2>
+                            <p class="parrafo">Cotiza y compara las mejores coberturas para tu vehiculo.</p>
+                            <button class="botonCotizar">Cotizar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="../assets/images/moto1.jpg" class="card-img-top" alt="Rapido">
+                        <div class="card-body">
+                            <h2>MOTO</h2>
+                            <p class="parrafo">Compara facilmente las mejores opciones integrales para tu moto.</p>
+                            <button class="botonCotizar">Cotizar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="../assets/images/casa2.jpg" class="card-img-top" alt="Agil">
+                        <div class="card-body">
+                            <h2>CASA</h2>
+                            <p class="parrafo">Descubri todas las posibilidades para proteger tu vivienda.</p>
+                            <button class="botonCotizar">Cotizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <section class="masInfo">
         <h3>¿Buscas mas informacion?</h3>

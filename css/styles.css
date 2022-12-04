@@ -9,7 +9,7 @@ body{
     text-align: center;
 }
 header {
-    background-color: rgb(55, 71, 79);
+    background: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
     padding: 5px;
     display: block;
     width: 100%;
@@ -18,7 +18,6 @@ header {
     z-index: 10;
 }
 .color-navbar{
-    background-color: rgb(55, 71, 79);
     color: rgb(255, 247, 233);
 }
 header nav{
@@ -30,10 +29,14 @@ nav li{
 nav ul li a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     color: rgb(255, 247, 233);
     margin: 0 10px;
     padding: 10px;
     display: inline-block;
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -41,30 +44,43 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
     margin: 10px auto;
+    color: white;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
 }
 .principal{
     text-align: center;
-    background-image: url(../assets/images/Online.jpg);
-    height: 30%;
+    background-image: url(../assets/images/Online6.jpg);
+    height: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 10%;
 }
-.principal a {
+.principalInicio {
+    text-align: center;
+    align-content: center;
+    background-image: url(../assets/images/Online6.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15% 10%;
+}
+.principalInicio a {
     text-decoration: none;
     border-radius: 20px;
-    background-color: rgb(255, 115, 29);
-    color: rgb(255, 247, 233);
+    background: none;
+    color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    border-color: rgb(255, 247, 233);
     padding: 1rem 8rem;
-    border: 0.5px solid white;
+    border: 2px solid rgb(255, 255, 255);
 }
-.principal a:hover{
-    color: #0a58ca;
+.principalInicio a:hover{
+    background: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
+    color: #ffffff;
+    border: 5px solid #ffffff;
 }
 .principal__callToAction{
     margin: 50px auto;
@@ -89,8 +105,8 @@ h5 {
     font-weight: 100;
 }
 .card{
-    background-color: rgb(144, 164, 174);
-    color: rgb(255, 247, 233);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     width: 180;
     height: 120;
@@ -98,11 +114,11 @@ h5 {
     padding: 10px;
 }
 .cardsSeguros{
-    background-color: rgb(144, 164, 174);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 .sectionCard {
-    background-color: rgb(55, 71, 79);
+    background: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
     padding: 10px;
 }
 .card img{
@@ -124,17 +140,20 @@ h5 {
     justify-content: center;
 }
 footer{
-    background-color: rgb(55, 71, 79);
-    padding: 10px;
-    color: rgb(255, 247, 233);
+    background: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);   padding: 10px;
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-family: 'Roboto', sans-serif;;
 }
 footer p {
     margin: 5px;
 }
 footer section a {
-    color: rgb(255, 247, 233);
+    color: rgb(255, 255, 255);
     margin: 10px;
+}
+footer section a:hover {
+    color: rgb(0, 0, 0);
 }
 
 .cardsSeguros {
@@ -164,11 +183,17 @@ footer section a {
 .botonCotizar{
     padding: 10px 30px;
     border-radius: 10px;
-    border: 0;
-    background-color: rgb(255, 115, 29);
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 1rem;
+}
+.botonCotizar:hover {
+    border: 1px solid white;
+    color: white;
+    background: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
 }
 .masInfo{
     padding: 20px;
@@ -179,12 +204,19 @@ footer section a {
 }
 .botonInfo {
     width: 25%;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     padding: 2px;
     border-radius: 10px;
-    background-color: rgb(144, 164, 174);
-    border: 0;
-    color: rgb(255, 255, 255);
+    background-color:white;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.botonInfo:hover {
+    border: 1px solid rgba(247, 0, 255, 1);
+    background: -webkit-linear-gradient(45deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .formularioSiniestros{
@@ -238,19 +270,25 @@ footer section a {
     margin: 10px;
 }
 .mapa{
-    background-color: rgb(144, 164, 174);
+    background: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
     padding: 10px;
     width: 100%;
     height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .mapa div {
     height: 80%;
     width: 40%;
     margin: 10px;
     display: inline-block;
+}
+.textoMapa{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
 }
 .mapa div iframe,h3,p {
     padding: 10px;
@@ -280,17 +318,16 @@ footer section a {
     display: inline-block;
 }
 
-
 @media (max-width: 768px) {
     .h1 {
         font-size: 2rem;
     }
-    .principal a {
+    .principalInicio a {
         font-weight: 500;
         padding: 1rem 4rem;
         font-size: 1.5rem;
     }
-    .principal {
+    .principalInicio {
         min-height: 100vh;
         padding: 25vh 0;
     }
