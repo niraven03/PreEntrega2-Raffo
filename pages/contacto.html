@@ -14,7 +14,7 @@
 <header class="shadow-lg">
     <nav class="navbar navbar-expand-lg color-navbar text-white navbar-light-hover-colo">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../assets/images/Logo.png" alt="Logo" width="50" height="44">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,69 +53,83 @@
         <h1>Contactanos</h1>
     </section>
     <section class="mapa">
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1965.0241034116063!2d-64.11380109810966!3d-32.17381547509391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f3acdcf836d%3A0x168c0aefcd1962d2!2zRMOtYXogVsOpbGV6IFPDoXJzZmllbGQgMTU5LCBYNTg1MCBSw61vIFRlcmNlcm8sIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1666894741394!5m2!1ses!2sar" width="70%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="textoMapa">
-            <h3>Seguros Net</h3>
-            <p class="parrafo">Direccion 123, Rio Tercero, Cordoba</p>
-            <p class="parrafo">(03571) - 424059</p>
-            <p class="parrafo">(03571) - 15545454</p>
-            <p class="parrafo">info@segurosnet.com.ar</p>
+        <div class="container">
+            <div class="row">
+                <div class="col flex">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1965.0241034116063!2d-64.11380109810966!3d-32.17381547509391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f3acdcf836d%3A0x168c0aefcd1962d2!2zRMOtYXogVsOpbGV6IFPDoXJzZmllbGQgMTU5LCBYNTg1MCBSw61vIFRlcmNlcm8sIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1666894741394!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col flex">
+                    <div class="textoMapa">
+                        <h3>Seguros Net</h3>
+                        <p class="parrafo">Direccion 123, Rio Tercero, Cordoba</p>
+                        <p class="parrafo">(03571) - 424059</p>
+                        <p class="parrafo">(03571) - 15545454</p>
+                        <p class="parrafo">info@segurosnet.com.ar</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="formularioContacto">
-        <h3>Por consultas, reclamos o sugerencias, completa el formulario y te contactaremos a la brevedad.</h3>
-        <form>
-            <div>
-                <p class="parrafo">Soy:</p>
-                <div>
-                    <input type="radio" name="persona">Asegurado
-                </div>
-                <div>
-                    <input type="radio" name="persona">Tercero
-                </div>
-                <div>
-                    <input type="radio" name="persona">Otro
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section class="formularioSiniestros col-12 flex">
+                    <h3>Por consultas, reclamos o sugerencias, completa el formulario y te contactaremos a la brevedad.</h3>
+                    <form>
+                        <div class="col-12">
+                            <p class="parrafo col-3">Soy:</p>
+                            <div class="col-3">
+                                <input type="radio" name="persona">Asegurado
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" name="persona">Tercero
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" name="persona">Otro
+                            </div>
+                        </div>
+                        <div>
+                            <p class="parrafo">Tipo de consulta:</p>
+                            <select required>
+                                <option value="0">Motivo de tu consulta*</option>
+                                <option value="1">Sugerencia</option>
+                                <option value="2">Siniestro</option>
+                                <option value="3">Consulta</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="parrafo">Nombre y Apellido*</p>
+                            <input type="text" required>
+                        </div>
+                        <div>
+                            <p class="parrafo">Correo electronico*</p>
+                            <input type="email" required>
+                        </div>
+                        <div>
+                            <p class="parrafo">Tipo de telefono</p>
+                            <select>
+                                <option value="0">Celular</option>
+                                <option value="1">Fijo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="parrafo">Numero de telefono*</p>
+                            <input type="number" required>
+                        </div>
+                        <div>
+                            <p class="parrafo">Consulta:</p>
+                            <input type="text" class="inputComentario">
+                        </div>
+                        <div class="botonEnviar">
+                            <input class="botonCotizar" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </section>
             </div>
-            <div>
-                <p class="parrafo">Tipo de consulta:</p>
-                <select required>
-                    <option value="0">Motivo de tu consulta*</option>
-                    <option value="1">Sugerencia</option>
-                    <option value="2">Siniestro</option>
-                    <option value="3">Consulta</option>
-                </select>
-            </div>
-            <div>
-                <p class="parrafo">Nombre y Apellido*</p>
-                <input type="text" required>
-            </div>
-            <div>
-                <p class="parrafo">Correo electronico*</p>
-                <input type="email" required>
-            </div>
-            <div>
-                <p class="parrafo">Tipo de telefono</p>
-                <select>
-                    <option value="0">Celular</option>
-                    <option value="1">Fijo</option>
-                </select>
-            </div>
-            <div>
-                <p class="parrafo">Numero de telefono*</p>
-                <input type="number" required>
-            </div>
-            <div>
-                <p class="parrafo">Consulta:</p>
-                <input type="text" class="inputComentario">
-            </div>
-            <div class="botonEnviar">
-                <input class="botonCotizar" type="submit" value="Enviar">
-            </div>
-        </form>
-    </section>
+        </div>
+    </div>
     <footer class="container-fluid">
         <section class="legalesSsn">
             <div>
@@ -133,14 +147,14 @@
             <img src="../assets/images/Logos/data-fiscal.png" alt="Data Fiscal">
         </section>
         <section class="redesSociales">
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-            <a href="">Linkenid</a>
-            <a href="">Youtube</a>
+            <a href="https://www.facebook.com/OrganizacionNeldoRaffo">Facebook</a>
+            <a href="https://www.instagram.com/organizacionneldoraffo/?hl=es-la">Instagram</a>
+            <a href="https://www.linkedin.com/company/organizaci%C3%B3n-neldo-raffo/mycompany/?viewAsMember=true">Linkenid</a>
+            <a href="https://www.youtube.com/channel/UCmJ91qTF3oZj5UiU9iwNsnQ">Youtube</a>
         </section>
         <p class="parrafo">Copyright © 2022 - Todos los derechos reservados.</p>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js">
+    <script src="../js/bootstrap.bundle.min.js">
 
     </script>
 </body>
