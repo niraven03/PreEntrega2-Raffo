@@ -1,0 +1,26 @@
+.principalInicio a:hover {
+    background: $ColorGradient;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+}
+.botonCotizar {
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 75%;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.botonCotizar:hover {
+    border: 1px solid white;
+    color: white;
+    background: $ColorGradient;
+}
+.botonInfo:hover {
+    border: 1px solid rgba(247, 0, 255, 1);
+    background: -webkit-linear-gradient(45deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

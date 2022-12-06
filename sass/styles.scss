@@ -1,0 +1,56 @@
+@import "variables";
+@import "reset";
+@import "body";
+@import "header";
+@import "botones";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+@media (max-width: 768px) {
+    body {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .principalInicio a {
+            font-weight: 500;
+            padding: 1rem 4rem;
+            font-size: 1.5rem;
+        }
+
+        .principalInicio {
+            min-height: 100vh;
+            padding: 15vh 0;
+        }
+
+    }
+   .botonInfo {
+        width: 50%;
+        padding: 0.50px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fechaHora input {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        .formularioSiniestros {
+            .fechaHora input {
+                width: 49.7%;
+                margin: 10px;
+                width: 100%;
+            }
+        }
+    }
+    .botonInfo {
+        width: 50%;
+        font-size: 0.8rem;
+        padding: 0.20px;
+        border-radius: 10px;
+    }
+
+}
