@@ -3,7 +3,7 @@ body {
 
     .principal {
         text-align: center;
-        background-image: url(../assets/images/Online6.jpg);
+        background-image: map-get($map-background,imagePrincipal);
         height: 50%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -14,22 +14,21 @@ body {
     .principalInicio {
         text-align: center;
         align-content: center;
-        background-image: url(../assets/images/Online6.jpg);
+        background-image: map-get($map-background,imagePrincipal);
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 15% 10%;
-
     }
 
     h1 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
+        font-family: $Fuente;
+        font-weight: map-get($map-fontWeight, bold);
         font-size: 2.5rem;
         text-align: center;
         margin: 10px auto;
-        color: white;
+        color: map-get($map-color,blanco);
         text-shadow: 0 0 2px rgb(0, 0, 0);
     }
 
@@ -37,9 +36,9 @@ body {
         text-decoration: none;
         border-radius: 20px;
         background: none;
-        color: rgb(255, 255, 255);
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        color: map-get($map-color,blanco);
+        font-family: $Fuente;
+        font-weight: map-get($map-fontWeight, medium);
         font-size: 2rem;
         padding: 1rem 8rem;
         border: 2px solid rgb(255, 255, 255);
@@ -50,35 +49,35 @@ body {
     }
 
     h2 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-family: $Fuente;
+        font-weight: map-get($map-fontWeight,medium);
         font-size: 1.5rem;
     }
 
     h3 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-family: $Fuente;
+        font-weight: map-get($map-fontWeight,medium);
         font-size: 1.2rem;
     }
 
     h5 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-family: $Fuente;
+        font-weight: map-get($map-fontWeight,medium);
         font-size: 0.8rem;
     }
 
     .parrafo {
-        font-family: 'Robot', sans-serif;
-        font-weight: 100;
+        font-family: $Fuente;
+        font-weight: map-get($map-fontWeight,light);
     }
 
     .sectionCard {
-        background: $ColorGradient;
+        background: map-get($map-background,gradientColor);
         padding: 10px;
 
         .card {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
+            background-color: map-get($map-background,blanco);
+            color: map-get($map-color, negro);
             border-radius: 10px;
             width: 180;
             height: 120;
@@ -112,9 +111,9 @@ body {
     footer {
         background: $ColorGradient;
         padding: 10px;
-        color: rgb(255, 255, 255);
+        color: map-get($map-color, blanco);
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: $Fuente;
 
         footer p {
             margin: 5px;
@@ -122,23 +121,23 @@ body {
     }
 
     footer section a {
-        color: rgb(255, 255, 255);
+        color: map-get($map-color, blanco);
         margin: 10px;
     }
 
     footer section a:hover {
-        color: rgb(0, 0, 0);
+        color: map-get($map-color, negro);
     }
 
     .cardsSeguros {
-        background-color: rgb(144, 164, 174);
+        background-color: map-get($map-background, grisClaro);
         padding: 20px;
         text-align: center;
 
         .cardsSeguros div {
-            background-color: rgb(55, 71, 79);
+            background-color: map-get($map-background, grisOscuro);
             border-radius: 10px;
-            color: rgb(255, 247, 233);
+            color: map-get($map-color, blanco);
             padding: 10x;
             margin: 10px 50px;
             text-align: center;
@@ -168,9 +167,9 @@ body {
             font-weight: 700;
             padding: 2px;
             border-radius: 10px;
-            background-color: white;
+            background-color: map-get($map-background, blanco);
             border: 1px solid rgb(0, 0, 0);
-            color: rgb(0, 0, 0);
+            color: map-get($map-color, negro);
         }
     }
 
@@ -182,7 +181,7 @@ body {
 
     .formularioSiniestros {
         padding: 10px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $Fuente;
         display: inline-block;
         text-align: center;
 
@@ -195,10 +194,10 @@ body {
         }
 
         .parrafosFormulario {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
+            font-family: $Fuente;
+            font-weight: map-get($map-fontWeight, light);
             font-size: 0.8rem;
-            color: rgb(144, 164, 174);
+            color: map-get($map-color, grisClaro);
             text-align: left;
         }
 
@@ -213,20 +212,20 @@ body {
         div select,
         option,
         input {
-            font-family: 'Roboto', sans-serif;
+            font-family: $Fuente;
             width: 100%;
         }
     }
 
     .nosotros {
         text-align: center;
-        background-image: url(../assets/images/Oficina.jpg);
+        background-image: map-get($map-background, imagenOficina);
         height: 500px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 10%;
-        color: rgb(255, 247, 233);
+        color: map-get($map-color, blanco);
     }
 
     .contenidoNosotros {
@@ -243,14 +242,14 @@ body {
     }
 
     .mapa {
-        background: $ColorGradient;
+        background: map-get($map-background, gradientColor);
         padding: 10px;
         width: 100%;
         height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: map-get($map-color, blanco);
 
         .centrar {
             height: 100%;
@@ -261,7 +260,7 @@ body {
         }
 
         .textoMapa {
-            font-family: 'Roboto', sans-serif;
+            font-family: $Fuente;
             font-size: 1rem;
             text-shadow: 0 0 2px rgb(0, 0, 0);
         }

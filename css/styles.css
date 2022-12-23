@@ -4,6 +4,61 @@
   padding: 0;
   box-sizing: border-box; }
 
+.principalInicio a:hover {
+  background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%);
+  color: white;
+  border: 5px solid #ffffff; }
+
+.botonCotizar {
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 75%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1rem; }
+
+.botonCotizar:hover {
+  border: 1px solid white;
+  color: white;
+  background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%); }
+
+.botonInfo:hover {
+  border: 1px solid #f700ff;
+  background: -webkit-linear-gradient(45deg, #f700ff 0%, #fffc00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+header {
+  background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%);
+  padding: 5px;
+  display: block;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 10; }
+  header .color-navbar {
+    color: white; }
+  header .color-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  header .color-navbar .navbar-toggler {
+    border: 1px solid black; }
+  header header nav {
+    text-align: center; }
+    header header nav nav li {
+      display: inline-block; }
+      header header nav nav li nav ul li a {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        color: white;
+        margin: 0 10px;
+        padding: 10px;
+        display: inline-block; }
+        header header nav nav li nav ul li a nav ul li a:hover {
+          color: black; }
+
 body {
   text-align: center; }
   body .principal {
@@ -24,7 +79,7 @@ body {
     background-position: center;
     padding: 15% 10%; }
   body h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
     text-align: center;
@@ -36,7 +91,7 @@ body {
     border-radius: 20px;
     background: none;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 2rem;
     padding: 1rem 8rem;
@@ -44,20 +99,20 @@ body {
   body .principal__callToAction {
     margin: 50px auto; }
   body h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.5rem; }
   body h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.2rem; }
   body h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 0.8rem; }
   body .parrafo {
-    font-family: 'Robot', sans-serif;
-    font-weight: 100; }
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   body .sectionCard {
     background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%);
     padding: 10px; }
@@ -88,7 +143,7 @@ body {
     padding: 10px;
     color: white;
     text-align: center;
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
     body footer footer p {
       margin: 5px; }
   body footer section a {
@@ -103,7 +158,7 @@ body {
     body .cardsSeguros .cardsSeguros div {
       background-color: #37474f;
       border-radius: 10px;
-      color: #fff7e9;
+      color: white;
       padding: 10x;
       margin: 10px 50px;
       text-align: center;
@@ -134,7 +189,7 @@ body {
     margin: 10px; }
   body .formularioSiniestros {
     padding: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: inline-block;
     text-align: center; }
     body .formularioSiniestros div {
@@ -144,7 +199,7 @@ body {
       height: 50px;
       display: inline-block; }
     body .formularioSiniestros .parrafosFormulario {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: 300;
       font-size: 0.8rem;
       color: #90a4ae;
@@ -156,7 +211,7 @@ body {
     body .formularioSiniestros div select,
     body .formularioSiniestros option,
     body .formularioSiniestros input {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       width: 100%; }
   body .nosotros {
     text-align: center;
@@ -166,7 +221,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding: 10%;
-    color: #fff7e9; }
+    color: white; }
   body .contenidoNosotros {
     padding: 20px; }
     body .contenidoNosotros section h3 {
@@ -190,7 +245,7 @@ body {
       display: inline-block;
       justify-content: center; }
     body .mapa .textoMapa {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1rem;
       text-shadow: 0 0 2px black; }
   body .mapa div div iframe,
@@ -202,61 +257,6 @@ body {
     margin: 10px;
     display: inline-block;
     flex: wrap; }
-
-header {
-  background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%);
-  padding: 5px;
-  display: block;
-  width: 100%;
-  position: sticky;
-  top: 0px;
-  z-index: 10; }
-  header .color-navbar {
-    color: #fff7e9; }
-  header .color-navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-  header .color-navbar .navbar-toggler {
-    border: 1px solid black; }
-  header header nav {
-    text-align: center; }
-    header header nav nav li {
-      display: inline-block; }
-      header header nav nav li nav ul li a {
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
-        color: #fff7e9;
-        margin: 0 10px;
-        padding: 10px;
-        display: inline-block; }
-        header header nav nav li nav ul li a nav ul li a:hover {
-          color: black; }
-
-.principalInicio a:hover {
-  background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%);
-  color: #ffffff;
-  border: 5px solid #ffffff; }
-
-.botonCotizar {
-  padding: 10px 30px;
-  border-radius: 10px;
-  width: 75%;
-  border: 1px solid black;
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 1rem; }
-
-.botonCotizar:hover {
-  border: 1px solid white;
-  color: white;
-  background: linear-gradient(90deg, #f700ff 0%, #fffc00 100%); }
-
-.botonInfo:hover {
-  border: 1px solid #f700ff;
-  background: -webkit-linear-gradient(45deg, #f700ff 0%, #fffc00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
 
 @media (max-width: 768px) {
   body h1 {

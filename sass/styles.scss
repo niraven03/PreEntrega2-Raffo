@@ -1,8 +1,9 @@
 @import "variables";
+@import "mixins";
 @import "reset";
-@import "body";
-@import "header";
 @import "botones";
+@import "header";
+@import "body";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 
 @media (max-width: 768px) {
@@ -23,7 +24,7 @@
         }
 
     }
-   .botonInfo {
+    .botonInfo {
         width: 50%;
         padding: 0.50px;
         border-radius: 10px;

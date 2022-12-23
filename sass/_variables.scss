@@ -1,2 +1,35 @@
 $ColorGradient: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%);
 $Fuente: 'Roboto',sans-serif;
+
+$map-fontWeight:(
+    thin : 100,
+    light : 300,
+    regular : 400,
+    medium : 500,
+    bold : 900,
+);
+
+$map-background:(
+    gradientColor : linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(255, 252, 0, 1) 100%),
+    blanco : rgb(255, 255, 255),
+    grisClaro : rgb(144, 164, 174),
+    grisOscuro : rgb(55, 71, 79),
+    imagePrincipal : url(../assets/images/Online6.jpg),
+    imagenOficina : url(../assets/images/Oficina.jpg)
+);
+
+$map-color:(
+    blanco : white,
+    negro : black,
+    grisClaro : rgb(144, 164, 174),
+
+);
+
+$map-size:(
+    5 : 5px,
+    10 : 10px,
+    15 : 15px,
+    20 : 20px,
+    25 : 25px,
+    50 : 50px
+);

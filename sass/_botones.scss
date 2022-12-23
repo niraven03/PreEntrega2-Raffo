@@ -1,6 +1,6 @@
 .principalInicio a:hover {
     background: $ColorGradient;
-    color: #ffffff;
+    color: map-get($map-color, blanco);
     border: 5px solid #ffffff;
 }
 .botonCotizar {
@@ -8,14 +8,14 @@
     border-radius: 10px;
     width: 75%;
     border: 1px solid black;
-    background-color: white;
+    background-color: map-get($map-background, blanco);
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 1rem;
 }
 .botonCotizar:hover {
     border: 1px solid white;
-    color: white;
+    color: map-get($map-color, blanco);
     background: $ColorGradient;
 }
 .botonInfo:hover {
